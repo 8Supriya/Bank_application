@@ -1,0 +1,24 @@
+problem statement
+
+write a bank application 
+2 option: 
+
+=========================================================================
+	Please Enter Your Choice
+	1. login
+	2. create account
+	3. exit
+=========================================================================
+
+
+1:login
+	input:account number and password
+ 
+2:create account
+ 	input:username.password,email id,phone no,adhar caed,pan no
+
+3:exit
+	
+
+
+

@@ -10,8 +10,10 @@ while int_value!=1 and int_value!=2 and int_value!=3:
         int_value=int(result)
         if int_value==1:
           login_func()
+          int_value=''
         elif int_value==2:
           create_account()
+          int_value=''
         elif int_value==3:
           print('exit')
     except:

@@ -1,3 +1,4 @@
+from db_connector import insert_user_details
 from user_details import UserDetails
 import re
 
@@ -52,9 +53,9 @@ def create_account():
         try:
          num_value=int(result2)
          if num_value==1:
-          print('successfully created')
           user_detail= UserDetails(username,password,email_id,phone_no,aadhar_no,pan_no)
-          return user_detail
+          insert_user_details(user_detail)
+          print('successfully created')
           
          elif num_value==2:
           print('edit your details')

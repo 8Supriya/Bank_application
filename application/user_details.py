@@ -1,3 +1,5 @@
+# This class is defined to take all the data's of username
+
 class UserDetails:
     def __init__(self, username,password,email_id,phone_no,aadhar_no,pan_no):
      self.username = username

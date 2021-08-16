@@ -1,4 +1,4 @@
-from db_connector import insert_user_details
+from db_connector import if_username_exist, insert_user_details
 from user_details import UserDetails
 import re
 
@@ -73,6 +73,11 @@ def create_account():
 def validate_username(name):
     if name.isalpha():
         if len(name) > 3 and len(name) <=10:
+         data= if_username_exist(name)
+         if data:
+           print('username already exist')
+           return False
+         else:
              return True
         else:
           print('username should be more than 3 and less than 10 letters') 
